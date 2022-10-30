@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+background-image:url('./assets/ERS-background.jpg');	
+}
+body{
+	padding:0px;
+	margin: 0px;
+}
+
+input {
+	width:20%;
+	padding:7px;
+	border-radius: 8px;
+	text-align: center;
+	font-size:12px;
+	font-weight: bold;
+	font-family: monospace;
+}
+
+button{
+	width:15%;
+	text-align: center;
+	padding:9px;
+	border-radius: 8px;
+	font-size:12px;
+	font-weight: bold;
+	background-color: yellowgreen;
+}
+

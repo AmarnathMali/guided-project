@@ -1,0 +1,18 @@
+<table>
+	<thead>
+		<tr>
+			 <th> CheckInId </th><th> ServiceDate </th><th> VehicleNumber </th>
+   	  	     <th> UserName </th><th> Mobile </th><th> Status </th>
+   	  	     <th> CheckInDate </th><th> CheckOutDate </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let d of dashboardData">
+			 <td> {{d.checkInId}} </td><td> {{d.serviceDate}} </td>
+   	  	    <td> {{d.vehicleNumber}} </td><td> {{d.userName}} </td>
+   	  	    <td> {{d.mobile}} </td><Td> {{d.status}} </Td>
+   	  	    <td> {{d.checkInDate}} </td> <td> {{d.checkOutDate}} </td>
+
+		</tr>
+	</tbody>
+</table>

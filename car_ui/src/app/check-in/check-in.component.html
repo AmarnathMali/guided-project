@@ -1,0 +1,24 @@
+
+<div id="checkInPage">
+	<label>serviceId</label><br>
+	<input type="text" placeholder="Service Id" [(ngModel)] = "carServiceDetails.serviceId" > <br><br>
+
+     <label>complaints</label>
+	<textarea [(ngModel)] ="carServiceDetails.complaints" rows = "5" cols = "60" ></textarea> <br><br>
+
+	Choose Additional Service : <br>
+	<input type="checkbox" [(ngModel)]="isWheelAlignmentSelected"/> Wheel Alignment
+	<input type="checkbox" [(ngModel)] = "isGearCheckupSelected" /> Gear CheckUp
+	<input type="checkbox" [(ngModel)] = "isOilsCheckupSelected" />Oils CheckUp
+
+	<br><br>
+
+	<input type="date" placeholder="checkInDate" [(ngModel)] = "carServiceDetails.checkInDate" /> <br><br>
+
+	<input type="date" placeholder="checkOutDate" [(ngModel)] = "carServiceDetails.checkOutDate" /> <br><br>
+
+
+	<button (click) = "submitCheckIn()" >Submit Car CheckIn </button>
+	
+	<h3> {{checkedInRespMsg}} </h3>
+</div>
